@@ -1,0 +1,28 @@
+/**
+银行管理系统
+属性 存入量 取出量
+动作 查询 正在操作
+*/
+public class Yh{
+	//声明属性
+	int cq;
+	int qq;
+	int ye;
+	//声明动作
+	public void cx(){
+		System.out.println("正在查询请稍后...");
+	}
+	public void cz(){
+		System.out.println("操作中");
+	}
+	//构造器
+	public Yh(int cq,int qq){
+		this.cq = cq;
+		this.qq = qq;
+	}
+	//输出信息
+	public void say(){
+		System.out.println("本次您存入："+cq+"元，"+"取出："+qq+"元，"+"余额："+(cq-qq)+"元；")
+	}
+
+}

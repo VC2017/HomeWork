@@ -1,0 +1,36 @@
+/**
+手机类
+属性/字段 成员变量：手机品牌 颜色 屏幕尺寸 价钱 
+动作/成员方法：开机 放音乐 玩游戏 关机
+*/
+public class Cellphone{
+	//声明属性
+	String name;//手机品牌
+	String color;//颜色
+	double size;//屏幕尺寸
+	double price;//价钱
+	//声明动作
+	public void open(){
+		System.out.println("正在开机...");
+	}
+	public void music(){
+		System.out.println("hello 酷狗");
+	}
+	public void games(){
+		System.out.println("从此刻开始，战场由我一人主宰。");
+	}
+	public void close(){
+		System.out.println("正在关机...");
+	}
+	//构造器
+	public Cellphone(String name,String color,double size,double price){
+		this.naem = name;
+		this.color = color;
+		this.size = size;
+		this.price = price;
+	}
+	//输出手机基本信息
+	public void say(){
+		System.out.println(name+"，"+color+"，"+size+"英寸"+price+"元");
+	}
+}

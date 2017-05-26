@@ -1,0 +1,11 @@
+public class runnian{
+	public static void main(String args[]){
+	int i,a;
+	a=2017;
+	for(i=4;i<a;i++){
+		if(i%4==0&&i%100!=0||i%400==0){
+		System.out.print(i+"\t");
+		}
+	}
+	}
+}

@@ -1,0 +1,35 @@
+/**
+电脑类
+属性：电脑品牌 处理器 cpu 内存
+动作：开机 关机 运行
+*/
+public class Computer{
+	//声明 属性 
+	String name;//电脑品牌
+	String clq;//处理器
+	String cpu;//cpu
+	String nc;//内存
+	int price;
+	//声明 动作
+	public void open(){
+		System.out.println("正在开机，请稍后");
+	}
+	public void close(){
+		System.out.println("正在关机");
+	}
+	public void yuxing(){
+		System.out.println("正在运行，欢迎使用本计算机");
+	}
+	//构造器
+	public Computer(String name,String cpu,String clq,String nc,int price){
+		this.name = name;
+		this.cpu = cpu;
+		this.clq = clq;
+		this.nc = nc;
+		this.price = price;
+	}
+	//输出电脑基本信息
+	public void say(){
+		System.out.println(name+"，"+cpu+"，"+clq+","+nc+"，"+price+"元。");
+	}
+}

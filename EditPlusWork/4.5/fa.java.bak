@@ -1,0 +1,3 @@
+public void fa(){
+		System.out.println("i am father");
+	}
